@@ -25,3 +25,14 @@ get '/bookings' do
 end
 
 
+post '/visit' do 
+	@username = params[:username]
+	@phone = params[:phone]
+	@datetime = params[:datetime]
+	@barber = params[:barber]
+	@color = params[:color]
+
+
+	erb "<h2>Спасибо, Вы записались!</h2>"
+
+end
